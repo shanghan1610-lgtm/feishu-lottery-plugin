@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>团队参赛抽签</title>
+    <script type="module" crossorigin src="./assets/index-j2XzBB9p.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-By_Vyb62.css">
+  </head>
+  <body>
+    <main id="app">
+      <header>
+        <div>
+          <h1>团队参赛抽签</h1>
+          <p id="status">正在连接当前多维表格…</p>
+        </div>
+        <label class="count">抽取人数 <input id="count" type="number" min="1" value="5" /></label>
+      </header>
+      <section class="actions">
+        <button id="draw" class="primary">随机抽取</button>
+        <button id="confirm" disabled>锁定结果</button>
+        <button id="clear" class="quiet">清空已锁定结果</button>
+      </section>
+      <section class="panel">
+        <div class="panel-title"><strong>本次候选人</strong><span id="candidate-count">0 人</span></div>
+        <div id="candidates" class="list empty">请先在多维表格中选择“抽奖名单收集”数据表。</div>
+      </section>
+      <section class="panel result-panel">
+        <div class="panel-title"><strong>抽签结果</strong><span id="result-count">未抽取</span></div>
+        <div id="results" class="list empty">点击“随机抽取”生成结果。</div>
+      </section>
+    </main>
+  </body>
+</html>
